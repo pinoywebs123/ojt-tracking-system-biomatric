@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ojt.exe" version="1.0.0.3" publicKeyToken="39436336e190dd04" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ojt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ojt.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="libzkfpcsharp.dll" size="12800">
+      <assemblyIdentity name="libzkfpcsharp" version="1.0.0.1" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vnLiJFJEgyj/I1lpZKFZLO9j+AVnY7BB4uoFGVBl/1Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="403968">
+      <assemblyIdentity name="MySql.Data" version="6.10.8.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>L5VOgTonC+dENioyKxTxi1X0pkznPZgQdUeGHfli0Ik=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ojt.exe" size="375824">
+      <assemblyIdentity name="ojt" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>y66mcgfekc2esIXFnFd5Kp/aIKZ7tCiru7ETMkBPMmY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ojt.exe.config" size="287">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yLA6neeenNCwgz6uMkHpoH8r0Y8TH7FdK1LoKhA7In4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=telay-chan-PC\telay-chan" issuerKeyHash="1dd44b3aeff050284b0b634a254eedad93232146" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>CVD9UbyQa6X9OIxYjTdNJwbh15c2kwwCqV+LKSzYyHk=</DigestValue></Reference></SignedInfo><SignatureValue>ErwSlW/mmeeTHO7aWkEKC2Fc5Gz+kmXgIL7A7rlZLWx/XxxOuVMIxdN/pXo/3nG+I1pbUEvtwqd3jlFlaNrHG70b+igF1v1INj4ZKy8pC/1D2m6uKNNpBIQDHSgVsId4jj+zJw5f/M/VwPaqeMLPQFBcpWS9fLHV8OCoRM6O8kI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>olx0rTCAip283e3e+9nG9S0sG4i3c5HOLcR7lGwX0dE4KtIGc4F4jq1Iyb1qG5i0MaTTTEvnECK3Abyc51q8LX7VxfpogF9bHGvhmAOw38imLLz5OIx34Hm7iTCdB/5tVRUKFostWBdyRXEXPQPGH/s2U6bOtqxxsQNQg+tiG1c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="79c8d82c298b5fa9020c933697d7e106274d378d588c38fda56b90bc51fd5009" Description="" Url=""><as:assemblyIdentity name="ojt.exe" version="1.0.0.3" publicKeyToken="39436336e190dd04" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=telay-chan-PC\telay-chan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ccUO8bMxxbsvx3vdzRl0R2bskoMFW5q1H/R1js+T+Ws=</DigestValue></Reference></SignedInfo><SignatureValue>Iz1/fC968RnSqC5QoRK1YxU98hhkEqAOoj8FS2/cOtj40mYMXrXPX3xTt/G6Yr7YL/uiwe8uTVghdHhOHEKczNxEjfsqdBXfNlGEzVSSWjZj6DRoxx7w3V01hZMD2sc6Hjcj83m6W5gGcaRKtRL0FCcgMhVvYnXm70miiCDdoqA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>olx0rTCAip283e3e+9nG9S0sG4i3c5HOLcR7lGwX0dE4KtIGc4F4jq1Iyb1qG5i0MaTTTEvnECK3Abyc51q8LX7VxfpogF9bHGvhmAOw38imLLz5OIx34Hm7iTCdB/5tVRUKFostWBdyRXEXPQPGH/s2U6bOtqxxsQNQg+tiG1c=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB+TCCAWKgAwIBAgIQYd8rz3k0fo9Hf8nsJ0C1ezANBgkqhkiG9w0BAQsFADA7MTkwNwYDVQQDHjAAdABlAGwAYQB5AC0AYwBoAGEAbgAtAFAAQwBcAHQAZQBsAGEAeQAtAGMAaABhAG4wHhcNMTgxMDIyMjIwOTI4WhcNMTkxMDIzMDQwOTI4WjA7MTkwNwYDVQQDHjAAdABlAGwAYQB5AC0AYwBoAGEAbgAtAFAAQwBcAHQAZQBsAGEAeQAtAGMAaABhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKJcdK0wgIqdvN3t3vvZxvUtLBuIt3ORzi3Ee5RsF9HROCrSBnOBeI6tSMm9ahuYtDGk00xL5xAitwG8nOdavC1+1cX6aIBfWxxr4ZgDsN/Ipiy8+TiMd+B5u4kwnQf+bVUVChaLLVgXckVxFz0Dxh/7NlOmzrascbEDUIPrYhtXAgMBAAEwDQYJKoZIhvcNAQELBQADgYEANTCd/lhv9S12yfQa1ON4MyotAF/WBiGTSmE+rRzs6t3QgwBf335gUcJvLaG8Rz9FJ9rLu/aJFDYQXZ9q9crInZqCeKI6MHWolgSGb2vDWn6uRkKgobiAHyNAah2JofyX6QmqwvjZa8WmR7fkNMMqAotGGqJqu4Iz7uBAtfDwq84=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
